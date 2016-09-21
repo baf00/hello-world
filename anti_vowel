@@ -1,0 +1,23 @@
+def anti_vowel(text):
+    print 'The input text is: ',
+    print text
+    print 'The length of the text is: ',
+    print len(text)
+    x = len(text)
+    print 'x = '
+    print x
+    antiVowelStringList  = []
+    for letter in text:
+        if letter in ('a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'):
+            print 'found a vowel'
+        else:
+            antiVowelStringList.append(letter)
+
+        print antiVowelStringList
+  
+    
+    #return str(antiVowelStringList)
+    print ''.join(antiVowelStringList)
+    return ''.join(antiVowelStringList)
+
+anti_vowel("The quick brown fox came over to meet the lazy dog")
