@@ -1,0 +1,21 @@
+def reverse(text):
+    print 'The input text is: ',
+    print text
+    print 'The length of the text is: ',
+    print len(text)
+    x = len(text)
+    print 'x = '
+    print x
+    y = 0 
+    reversedStringList  = []
+    while x > 0:
+        reversedStringList.append(text[x-1])
+   #    lst.append(word[2])
+        print reversedStringList
+        x = x - 1
+        y = y + 1
+    
+    #return str(reversedStringList)
+    return ''.join(reversedStringList)
+
+reverse("abcd")
